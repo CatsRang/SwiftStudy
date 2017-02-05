@@ -12,10 +12,14 @@ class Ch02_Values: XCTestCase {
     
     override func setUp() {
         super.setUp()
+        
+        print("======== {")
     }
     
     override func tearDown() {
         super.tearDown()
+        
+        print("======== }")
     }
     
     func testString() {
@@ -46,6 +50,9 @@ class Ch02_Values: XCTestCase {
         // 먼저 문자열로 변환한 후 합한다.
         print ("testString> 안녕, " + "Swift " + String(3))
         print ("testString> 안녕, " + "Swift " + String(3.0))
+        
+        // Count chars
+        print("012345".characters.count)
     }
 
     
@@ -54,16 +61,14 @@ class Ch02_Values: XCTestCase {
         
         print(mystr.components(separatedBy: ","))
         print(mystr.components(separatedBy: [",", " "]))
+        print(mystr.components(separatedBy: .whitespacesAndNewlines))
     }
     
-    func testStringCount() {
-        let mystr = "1234567  "
+    func testStringTrim() {
+        let mystr = "  \t 1234567  "
         
         // String Trimming
-        print("|" + mystr.trimmingCharacters(in: .whitespacesAndNewlines) + "|")
-        
-        // Count chars
-        print(mystr.characters.count)
+        print("testStringTrim> |" + mystr.trimmingCharacters(in: .whitespacesAndNewlines) + "|")
     }
     
     func testStringIndex() {
