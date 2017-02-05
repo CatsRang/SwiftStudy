@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1136A4591E46A4F20016CDAE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136A4581E46A4F20016CDAE /* main.swift */; };
+		1136A4741E46CA140016CDAE /* Ch02_Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136A4731E46CA140016CDAE /* Ch02_Values.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,21 @@
 /* Begin PBXFileReference section */
 		1136A4551E46A4F20016CDAE /* SwiftStudy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftStudy; sourceTree = BUILT_PRODUCTS_DIR; };
 		1136A4581E46A4F20016CDAE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1136A4711E46CA140016CDAE /* Ch02_Values.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ch02_Values.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1136A4731E46CA140016CDAE /* Ch02_Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ch02_Values.swift; sourceTree = "<group>"; };
+		1136A4751E46CA140016CDAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1136A4791E46CB7C0016CDAE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1136A4521E46A4F20016CDAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1136A46E1E46CA140016CDAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +53,9 @@
 		1136A44C1E46A4F20016CDAE = {
 			isa = PBXGroup;
 			children = (
+				1136A4791E46CB7C0016CDAE /* .gitignore */,
 				1136A4571E46A4F20016CDAE /* SwiftStudy */,
+				1136A4721E46CA140016CDAE /* Ch02_Values */,
 				1136A4561E46A4F20016CDAE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				1136A4551E46A4F20016CDAE /* SwiftStudy */,
+				1136A4711E46CA140016CDAE /* Ch02_Values.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +75,15 @@
 				1136A4581E46A4F20016CDAE /* main.swift */,
 			);
 			path = SwiftStudy;
+			sourceTree = "<group>";
+		};
+		1136A4721E46CA140016CDAE /* Ch02_Values */ = {
+			isa = PBXGroup;
+			children = (
+				1136A4731E46CA140016CDAE /* Ch02_Values.swift */,
+				1136A4751E46CA140016CDAE /* Info.plist */,
+			);
+			path = Ch02_Values;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +106,23 @@
 			productReference = 1136A4551E46A4F20016CDAE /* SwiftStudy */;
 			productType = "com.apple.product-type.tool";
 		};
+		1136A4701E46CA140016CDAE /* Ch02_Values */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1136A4781E46CA140016CDAE /* Build configuration list for PBXNativeTarget "Ch02_Values" */;
+			buildPhases = (
+				1136A46D1E46CA140016CDAE /* Sources */,
+				1136A46E1E46CA140016CDAE /* Frameworks */,
+				1136A46F1E46CA140016CDAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ch02_Values;
+			productName = Ch02_Values;
+			productReference = 1136A4711E46CA140016CDAE /* Ch02_Values.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +134,10 @@
 				ORGANIZATIONNAME = " HyunWoo Lee";
 				TargetAttributes = {
 					1136A4541E46A4F20016CDAE = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					1136A4701E46CA140016CDAE = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -111,9 +156,20 @@
 			projectRoot = "";
 			targets = (
 				1136A4541E46A4F20016CDAE /* SwiftStudy */,
+				1136A4701E46CA140016CDAE /* Ch02_Values */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1136A46F1E46CA140016CDAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1136A4511E46A4F20016CDAE /* Sources */ = {
@@ -121,6 +177,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1136A4591E46A4F20016CDAE /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1136A46D1E46CA140016CDAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1136A4741E46CA140016CDAE /* Ch02_Values.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +295,32 @@
 			};
 			name = Release;
 		};
+		1136A4761E46CA140016CDAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Ch02_Values/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BlessedSoft.Ch02-Values";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1136A4771E46CA140016CDAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Ch02_Values/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BlessedSoft.Ch02-Values";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -248,6 +338,15 @@
 			buildConfigurations = (
 				1136A45D1E46A4F20016CDAE /* Debug */,
 				1136A45E1E46A4F20016CDAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1136A4781E46CA140016CDAE /* Build configuration list for PBXNativeTarget "Ch02_Values" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1136A4761E46CA140016CDAE /* Debug */,
+				1136A4771E46CA140016CDAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
