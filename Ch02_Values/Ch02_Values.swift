@@ -79,7 +79,8 @@ class Ch02_Values: XCTestCase {
         print("testStringIndex> " + mystr.substring(to: mystr.endIndex))
         print("testStringIndex> " + mystr.substring(from: mystr.startIndex))
         
-        print("testStringIndex> " + mystr.substring(to: mystr.index(mystr.startIndex, offsetBy: 5)))
+        print("testStringIndex> to 5: " + mystr.substring(to: mystr.index(mystr.startIndex, offsetBy: 5)))
+        print("testStringIndex> from 5: " + mystr.substring(from: mystr.index(mystr.startIndex, offsetBy: 5)))
         
         // 아래의 String Extentions을 사용한 예
         print("testStringIndex> " + mystr.substring(from: 7))
