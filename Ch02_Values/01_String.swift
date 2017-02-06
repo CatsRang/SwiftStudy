@@ -72,8 +72,9 @@ class Ch02_Values: XCTestCase {
     }
     
     func testStringIndex() {
-        let mystr = "abcdefghijklm"
+        let mystr = "(word)abcdefghijklm"
         
+        // get char at given index
         print(mystr[mystr.startIndex])
         
         // 다음과 같이 영역을 벋어난 경우는 에러이다.
@@ -91,9 +92,24 @@ class Ch02_Values: XCTestCase {
         print("testStringIndex> " + mystr.substring(from: 7))
         print("testStringIndex> " + mystr.substring(to: 5))
         print("testStringIndex> " + mystr.substring(with: 7..<11))
+        
+        
+        // check if a str has a given prefix or not
+        print(mystr.hasPrefix("(word)"))
+        print(mystr.hasSuffix("(word)"))
+    }
+    
+    func testStringCompare() {
+        let str1 = "I love Swift."
+        let str2 = "I love Swift."
+        
+        if str1 == str2 {
+            print("Equal |\(str1)| == |\(str2)|")
+        }
     }
 }
 
+// String+Substring
 extension String {
     func index(from: Int) -> Index {
         return self.index(startIndex, offsetBy: from)
