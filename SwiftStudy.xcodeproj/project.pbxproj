@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1136A4591E46A4F20016CDAE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136A4581E46A4F20016CDAE /* main.swift */; };
-		1136A4741E46CA140016CDAE /* Ch02_Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136A4731E46CA140016CDAE /* Ch02_Values.swift */; };
+		1136A4741E46CA140016CDAE /* 01_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136A4731E46CA140016CDAE /* 01_String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +27,7 @@
 		1136A4551E46A4F20016CDAE /* SwiftStudy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftStudy; sourceTree = BUILT_PRODUCTS_DIR; };
 		1136A4581E46A4F20016CDAE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1136A4711E46CA140016CDAE /* Ch02_Values.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ch02_Values.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1136A4731E46CA140016CDAE /* Ch02_Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ch02_Values.swift; sourceTree = "<group>"; };
+		1136A4731E46CA140016CDAE /* 01_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 01_String.swift; sourceTree = "<group>"; };
 		1136A4751E46CA140016CDAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1136A4791E46CB7C0016CDAE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +80,7 @@
 		1136A4721E46CA140016CDAE /* Ch02_Values */ = {
 			isa = PBXGroup;
 			children = (
-				1136A4731E46CA140016CDAE /* Ch02_Values.swift */,
+				1136A4731E46CA140016CDAE /* 01_String.swift */,
 				1136A4751E46CA140016CDAE /* Info.plist */,
 			);
 			path = Ch02_Values;
@@ -184,7 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1136A4741E46CA140016CDAE /* Ch02_Values.swift in Sources */,
+				1136A4741E46CA140016CDAE /* 01_String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +349,7 @@
 				1136A4771E46CA140016CDAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
